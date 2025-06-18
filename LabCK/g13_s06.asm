@@ -2,10 +2,10 @@
 prompt: .asciz "Nhap chuoi ki tu : "
 # ASCII into hexa
 hex: .byte '0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'
-disk1: .space 4
-disk2: .space 4
-disk3: .space 4
-array: .space 32					# Store parities (results for data XOR)
+disk1: .space 500
+disk2: .space 500
+disk3: .space 500
+array: .space 1024				# Store parities (results for data XOR)
 string: .space 5000					# Input string
 newline: .asciz "\n"  					# Ký tự xuống dòng
 error_message: .asciz "Do dai chuoi khong hop le! Chieu dai cua chuoi phai chia het cho 8. Hay nhap lai.\n"
